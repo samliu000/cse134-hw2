@@ -150,7 +150,7 @@
         <hr>
         <section>
             <h3>Experiment with <code>select</code></h3>
-            <select name="stuff" id="stuff">
+            <select name="groceries" id="groceries_id">
                 <optgroup label="Fruits">
                     <option value="apple">Apple</option>
                     <option value="orange">Orange</option>
@@ -169,15 +169,15 @@
             <form>
                 <fieldset>
                     <legend>Random Form</legend>
-                    <label for="mytextarea">Text Area</label><br>
-                    <textarea id="mytextarea" name="mytextarea" rows="2"
+                    <label for="textarea_id">Text Area</label><br>
+                    <textarea id="textarea_id" name="mytextarea" rows="2"
                         cols="50">Put your stuff in the text area :)</textarea><br>
 
-                    <label for="mycolorinput">Color Input</label><br>
-                    <input type="color" id="mycolorinput" name="mycolorinput"><br>
+                    <label for="colorinput_id">Color Input</label><br>
+                    <input type="color" id="colorinput_id" name="mycolorinput"><br>
 
-                    <label for="stuff">Choose your stuff</label>
-                    <input list="stuffs" name="stuff" id="stuff"><br>
+                    <label for="stuff_id">Choose your stuff</label>
+                    <input list="stuffs" name="stuff" id="stuff_id"><br>
                     <datalist id="stuffs">
                         <option value="Pen">
                         <option value="Pineapple">
@@ -209,11 +209,11 @@
             <h3>Experiment with <code>caption and col</code></h3>
             <table>
                 <caption>Sample Table</caption>
+                <colgroup>
+                    <col class="first column">
+                    <col class=" second column">
+                </colgroup>
                 <thead>
-                    <colgroup>
-                        <col class="first column"">
-                        <col class=" second column">
-                    </colgroup>
                     <tr>
                         <th>Heading 1</th>
                         <th>Heading 2</th>
@@ -227,7 +227,8 @@
                 </tbody>
             </table>
         </section>
-    </main><hr>
+    </main>
+    <hr>
 
     <footer>
         <p>This page was made with &hearts; by Samuel Liu

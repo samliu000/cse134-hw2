@@ -24,7 +24,8 @@
             </a>
             <h1>Experiments</h1>
         </nav>
-    </header><hr>
+    </header>
+    <hr>
 
     <main>
         <section>
@@ -164,17 +165,71 @@
         </section>
         <hr>
         <section>
-            <h3>Experiment with blank</h3>
+            <h3>Experiment with <code>form</code></h3>
+            <form>
+                <fieldset>
+                    <legend>Random Form</legend>
+                    <label for="mytextarea">Text Area</label><br>
+                    <textarea id="mytextarea" name="mytextarea" rows="2"
+                        cols="50">Put your stuff in the text area :)</textarea><br>
+
+                    <label for="mycolorinput">Color Input</label><br>
+                    <input type="color" id="mycolorinput" name="mycolorinput"><br>
+
+                    <label for="stuff">Choose your stuff</label>
+                    <input list="stuffs" name="stuff" id="stuff"><br>
+                    <datalist id="stuffs">
+                        <option value="Pen">
+                        <option value="Pineapple">
+                        <option value="Apple">
+                    </datalist>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
         </section>
         <hr>
         <section>
-            <h3>Experiment with blank</h3>
+            <h3>Experiment with <code>details</code></h3>
+            <details>
+                <summary>Turkeys are not chickens</summary>
+                <p>Turkeys are not chickens because turkeys lay turkey eggs while chickens lay chicken eggs</p>
+            </details>
         </section>
         <hr>
-    </main>
+        <section>
+            <h3>Experiment with <code>template</code></h3>
+            <template>
+                <p>This is a template. It is hidden to the user and enabled by javascript. We should use this tag
+                    whenever we have some reusable content that we want to generate over and over.</p>
+            </template>
+        </section>
+        <hr>
+        <section>
+            <h3>Experiment with <code>caption and col</code></h3>
+            <table>
+                <caption>Sample Table</caption>
+                <thead>
+                    <colgroup>
+                        <col class="first column"">
+                        <col class=" second column">
+                    </colgroup>
+                    <tr>
+                        <th>Heading 1</th>
+                        <th>Heading 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1:1</td>
+                        <td>1:2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main><hr>
 
     <footer>
-        <hr>
         <p>This page was made with &hearts; by Samuel Liu
             <a href="mailto:samuel.liu1004+website@gmail.com">Email</a>
             <a href="https://www.linkedin.com/in/samuel-liu-1004/" target="_blank">LinkedIn</a>
